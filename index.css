@@ -1,0 +1,64 @@
+/****** Estilos generales ******
+********************************/
+* { box-sizing: border-box; }
+
+body { margin: 0; font-family: sans-serif; }
+
+/****** Estilos del formulario ******
+*************************************/
+.formulario h1 {   /* Estilos del título del formulario */
+    text-align: center;
+    margin-top: 0;
+    color: rgba(0,0,0,0.7);
+    margin-bottom: 50px;
+}
+
+.formulario {   /* Estilos del formulario */
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+}
+
+.texto, .label, .boton {   /* Estilos de los <input> y <label> */
+    display: block;
+    width: 100%;
+    font-size: 1.3em;
+}
+
+label {   /* Estilos de las etiquetas (<label>) */
+    padding-left: 15px;
+    position: absolute;
+    margin-top: -85px;
+    z-index: -20;
+    transition: all 0.3s;
+}
+
+.texto {   /* Estilos de los <input> */
+    padding: 20px;
+    border: 3px solid rgba(0,0,0,0.3);
+    margin-bottom: 40px;
+    background: transparent;
+}
+.texto:focus + .label {
+    margin-top: -140px;
+}
+
+.boton {   /* Estilos del botón */
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background: grey;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+}
+
+.texto_fijo {   /* Esta clase no está en el "index.html". Esta clase
+    será usada en el código JavaScript */
+    margin-top: -140px;
+}
